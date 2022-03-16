@@ -1,0 +1,24 @@
+$normal: #1c9c48;
+$warning: #fdc503;
+$critical: #d51f35;
+$offline: #999999;
+
+.bg-normal {
+  background-color: $normal;
+}
+
+.bg-warning {
+  background-color: $warning;
+}
+
+.bg-critical {
+  background-color: $critical;
+}
+
+.bg-offline {
+  background-color: $offline;
+}
+
+.fa {
+  font-size: 24px;
+}

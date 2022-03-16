@@ -1,0 +1,12 @@
+<section class="storybook">
+  <div *ngIf="type === 'default'">
+    <div><p-radioButton value="1" label="Option 1"></p-radioButton></div>
+  </div>
+
+  <div *ngIf="type === 'Radiogroup'">
+    <div><p-radioButton name="group1" value="Option 1" label="Option 1" [(ngModel)]="val1" inputId="opt1"></p-radioButton></div>
+    <div><p-radioButton name="group1" value="Option 2" label="Option 2" [(ngModel)]="val1" inputId="opt2"></p-radioButton></div>
+    <div><p-radioButton name="group1" value="Option 3" label="Option 3" [(ngModel)]="val1" inputId="opt3" [disabled]="true"></p-radioButton></div>
+  </div>
+
+</section>

@@ -1,0 +1,32 @@
+<section class="storybook">
+  <div *ngIf="type === 'default'">
+    <button pButton type="button" label="Button" class="ui-button-danger"></button>
+  </div>
+  <div *ngIf="type === 'primary'">
+    <button pButton type="button" label="Button" class="ui-button-danger"></button>
+    <button pButton type="button" icon="pi pi-check" label="Button" class="ui-button-danger"></button>
+    <button pButton type="button" icon="pi pi-check" class="ui-button-danger"></button>
+    <button pButton type="button" [disabled]="true" label="Disabled" class="ui-button-danger"></button>
+    <button pButton type="button" icon="pi pi-check" label="Button" class="ui-button-danger ui-button-rounded"></button>
+    <!-- <button pButton type="button" icon="pi pi-check" label="Button" class="ui-button-danger btn-outline"></button> -->
+  </div>
+  <div *ngIf="type === 'secondary'">
+    <button pButton type="button" label="Button" class="ui-button-secondary"></button>
+    <button pButton type="button" icon="pi pi-check" label="Button" class="ui-button-secondary"></button>
+    <button pButton type="button" icon="pi pi-check" class="ui-button-secondary"></button>
+    <button pButton type="button" [disabled]="true" label="Disabled" class="ui-button-secondary"></button>
+    <button pButton type="button" icon="pi pi-check" label="Button" class="ui-button-secondary ui-button-rounded"></button>
+    <button pButton type="button" icon="pi pi-check" label="Button" class="ui-button-secondary btn-outline"></button>
+  </div>
+  <div *ngIf="type === 'basic'">
+    <button pButton type="button" label="Button"></button>
+    <button pButton type="button" icon="pi pi-check" label="Button"></button>
+    <button pButton type="button" icon="pi pi-check"></button>
+    <button pButton type="button" [disabled]="true" label="Disabled"></button>
+    <button pButton type="button" icon="pi pi-check" label="Button"></button>
+    <!-- <button pButton type="button" icon="fa fa-user-plus"></button>
+    <button pButton type="button" icon="fa fa-trash"></button> -->
+    <button pButton type="button" icon="fa fa-envelope" class="ui-button-rounded"></button>
+  </div>
+
+</section>

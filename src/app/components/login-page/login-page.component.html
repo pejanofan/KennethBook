@@ -1,0 +1,39 @@
+<main class="content-page">
+  <div class="content">
+    <div class="login">
+      <div class="login-logo">
+        <img src="../assets/images/logo.png">
+      </div>
+      <div class="login-content">
+        <h3 translate>Sign in to PowerPanel Cloud</h3>
+        <div class="form-group">
+          <label translate for="" class="col-form-label">Username</label>
+          <div>
+            <input type="text" pInputText id="username" class="pInputText" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label translate for="" class="col-form-label">Password</label>
+          <div class="inputpassword">
+            <!-- <input type="password" pPassword id="password" class="pInputText" formControlName="password" required> -->
+            <input type="{{inputtype}}" pPassword #password class="pInputText" required [(ngModel)]="passwordValue" (ngModelChange)="passwordChange(password.value)">
+            <p-toggleButton class="passwordIcon" (onChange)="handleChange($event)" [(ngModel)]="passwordIcon" onIcon="pi pi-eye" offIcon="pi pi-eye-slash" *ngIf="showpasswordIcon"
+              onLabel="pi-eye" offLabel="pi-eye"></p-toggleButton>
+          </div>
+        </div>
+        <div class="link">
+          <a translate href="#" class="resend">Resend Activation Mail</a>
+          <a translate href="#" class="password" target="_blank">Forget password ?</a>
+        </div>
+
+        <button type="submit" pButton label="LOG IN" class="ui-button-danger login-btn"></button>
+        <div class="sign">
+          {{"Don't have an account?"}}
+          <a translate href="#" class="" target="_blank"> Sign Up</a>
+        </div>
+        <!-- <p-message severity="error" text="Login fail." *ngIf="loginFail"></p-message> -->
+      </div>
+      <div class="system-version"><small>v</small>1.6.0</div>
+    </div>
+  </div>
+</main>

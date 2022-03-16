@@ -1,0 +1,10 @@
+<section class="storybook">
+  <div *ngIf="type === 'line'">
+    <p-chart type="line" [data]="data" height="300"></p-chart>
+  </div>
+  <div *ngIf="type === 'pie'">
+    <p-chart type="pie" [data]="piechart" height="300"></p-chart>
+  </div>
+
+</section>
+

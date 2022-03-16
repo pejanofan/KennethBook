@@ -1,0 +1,12 @@
+
+<section class="storybook">
+  <div class="ui-g" *ngIf="!group">
+    <div><p-checkbox name="alertLevel" value="0" label="This is the label"> </p-checkbox></div>
+  </div>
+  <div class="ui-g" *ngIf="group">
+    <div><p-checkbox name="alertLevel" value="1" label="Critical"> </p-checkbox></div>
+    <div><p-checkbox name="alertLevel" value="2" label="Warning"></p-checkbox></div>
+    <div><p-checkbox name="alertLevel" value="3" label="Information"></p-checkbox></div>
+    <div><p-checkbox name="alertLevel" value="4" label="Hardware Status"></p-checkbox></div>
+  </div>
+</section>
